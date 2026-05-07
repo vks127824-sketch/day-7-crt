@@ -1,0 +1,19 @@
+//program--2
+// Access specifier
+// private
+#include <iostream>
+using namespace std;
+ 
+ class BankAccount{
+     private:
+     int balance = 5000;
+     
+public:
+void shawblance(){
+    cout << balance;
+    }
+};
+int main(){
+    BankAccount obj1;
+    obj1.shawblance();
+}
