@@ -1,0 +1,28 @@
+// day -7
+// problem 1
+
+#include <iostream>
+using namespace std;
+
+// Pass by Value
+void updateByValue(int a) {
+    a = 500;
+}
+
+// Pass by Reference
+void updateByReference(int &a) {
+    a = 500;
+}
+
+int main() {
+
+    int original = 100;
+
+    updateByValue(original);
+    cout << original << "\n";
+
+    updateByReference(original);
+    cout << original;
+
+    return 0;
+}
